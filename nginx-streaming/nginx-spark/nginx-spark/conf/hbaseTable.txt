@@ -1,0 +1,24 @@
+#create 'ng_url_minute_pvuv_201702','pv','uv'
+#create 'ng_url_hour_pvuv_201702','pv','uv'
+#create 'ng_url_day_pvuv_201702','pv','uv'
+#create 'ng_url_hour_maxmintime_201702','minTime','maxTime'
+
+
+create 'ng_url_minute_pvuv_201702', { NAME => 'pv', COMPRESSION => 'snappy'}, { NAME => 'uv', COMPRESSION => 'snappy'}
+create 'ng_url_hour_pvuv_201702', { NAME => 'pv', COMPRESSION => 'snappy'}, { NAME => 'uv', COMPRESSION => 'snappy'}
+create 'ng_url_day_pvuv_201702', { NAME => 'pv', COMPRESSION => 'snappy'}, { NAME => 'uv', COMPRESSION => 'snappy'}
+create 'ng_url_hour_maxmintime_201702', { NAME => 'minTime', COMPRESSION => 'snappy'}, { NAME => 'maxTime', COMPRESSION => 'snappy'}
+
+create 'ng_url_minute_pvuv_201703', { NAME => 'pv', COMPRESSION => 'snappy'}, { NAME => 'uv', COMPRESSION => 'snappy'}
+create 'ng_url_hour_pvuv_201703', { NAME => 'pv', COMPRESSION => 'snappy'}, { NAME => 'uv', COMPRESSION => 'snappy'}
+create 'ng_url_day_pvuv_201703', { NAME => 'pv', COMPRESSION => 'snappy'}, { NAME => 'uv', COMPRESSION => 'snappy'}
+create 'ng_url_hour_maxmintime_201703', { NAME => 'minTime', COMPRESSION => 'snappy'}, { NAME => 'maxTime', COMPRESSION => 'snappy'}
+
+truncate 'ng_url_minute_pvuv_201703'
+truncate 'ng_url_hour_pvuv_201703'
+truncate 'ng_url_day_pvuv_201703'
+truncate 'ng_url_hour_maxmintime_201703'
+
+ng_url_day_pvuv_201702
+ng_url_hour_pvtime_201702
+ng_url_minute_pvuv_201702

@@ -1,0 +1,3 @@
+#!/bin/sh
+
+/home/hadoop/nginx-flume/bin/start_s0_nginx_agent.sh

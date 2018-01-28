@@ -1,0 +1,11 @@
+log_format  access '$http_x_forwarded_for - $remote_user [$time_local] "$request" '
+                      '$status $body_bytes_sent "$http_referer" '
+                      '"$http_user_agent" '
+                      '$request_time $upstream_response_time ' $remote_addr;
+
+219.138.139.134 - - [17/Feb/2017:12:11:30 +0800] "POST /url_04 HTTP/1.1" 200 51 "" "HttpComponents/1.1" 0.003 0.003 10.8.1.6
+
+
+echo '219.138.139.134 - - [17/Feb/2017:12:11:30 +0800] "POST /url_04 HTTP/1.1" 200 51 "" "HttpComponents/1.1" 0.003 0.003 10.8.1.6' >> /home/hadoop/app/nginx1/logs/access_log
+echo '219.138.139.135 - - [17/Feb/2017:12:11:30 +0800] "POST /url_04 HTTP/1.1" 200 51 "" "HttpComponents/1.1" 0.003 0.003 10.8.1.6' >> /home/hadoop/app/nginx1/logs/access_log
+echo '219.138.139.136 - - [17/Feb/2017:12:11:30 +0800] "POST /url_05 HTTP/1.1" 200 51 "" "HttpComponents/1.1" 0.003 0.003 10.8.1.6' >> /home/hadoop/app/nginx1/logs/access_log
